@@ -1,0 +1,30 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "route" : "getRatings/{id}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "taskDocument",
+      "direction": "in",
+      "connectionStringSetting": "cosmosDBSetting",
+      "databaseName": "ratings",
+      "collectionName": "openhack",
+      "Id" : "{id}"
+    }
+  ]
+}

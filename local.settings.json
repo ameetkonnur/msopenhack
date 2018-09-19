@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "NODE_OPTIONS":"--inspect=5858",
+    "cosmosDBSetting" : "AccountEndpoint=https://sqlcomosdb.documents.azure.com:443/;AccountKey=sbgRlHPF2hpiljDpT8uecVXKxYgHbnIcQhWn8OfiHDxHElb1EtWOWvLUiI8u6R0lOPrQ8WytLUUZQ1ks4Cbo0w==;"
+  }
+}
