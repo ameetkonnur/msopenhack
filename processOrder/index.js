@@ -6,8 +6,9 @@ module.exports = async function (context, myBlob) {
     context.log ('prefix : ' + file_prefix);
 
     const azure = require('azure-storage');
-    //context.log(process.env.msopenhackchallenge6_STORAGE);
-    const blobService = azure.createBlobService(process.env.msopenhackchallenge6_STORAGE);
+    var connection = context.log(process.env.msopenhackchallenge6_STORAGE);
+    context.log(connection);
+    const blobService = azure.createBlobService(connection);
     blobService.listBlobsSegmentedWithPrefix('challenge6blob',file_prefix,null,(err,data)=>{
         if (err) {
             context.log(err);
