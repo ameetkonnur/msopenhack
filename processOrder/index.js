@@ -5,7 +5,7 @@ module.exports = async function (context, myBlob) {
     context.log ('prefix : ' + file_prefix);
 
     const azure = require('azure-storage');
-    const blobService = azure.createBlobService(process.env['msopenhackchallenge6_STORAGE']);
+    const blobService = azure.createBlobService(process.env.msopenhackchallenge6_STORAGE);
     
     const list = () => {
         return new Promise((resolve,reject)=>{
@@ -19,4 +19,6 @@ module.exports = async function (context, myBlob) {
             })
         })
     }
+
+    list();
 };
