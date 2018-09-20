@@ -1,0 +1,83 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "msopenhacknodejs",
+    "version": "1.0",
+    "description": "Import from \"msopenhacknodejs\" Function App"
+  },
+  "host": "apimgmt18.azure-api.net",
+  "basePath": "/msopenhacknodejs",
+  "schemes": [
+    "https"
+  ],
+  "securityDefinitions": {
+    "apiKeyHeader": {
+      "type": "apiKey",
+      "name": "Ocp-Apim-Subscription-Key",
+      "in": "header"
+    },
+    "apiKeyQuery": {
+      "type": "apiKey",
+      "name": "subscription-key",
+      "in": "query"
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    }
+  ],
+  "paths": {
+    "/getRatings/{id}": {
+      "get": {
+        "operationId": "get-getratings",
+        "summary": "getRatings",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "post": {
+        "operationId": "post-getratings",
+        "summary": "getRatings",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/getProduct": {
+      "get": {
+        "operationId": "get-getproduct",
+        "summary": "getProduct",
+        "responses": {}
+      }
+    },
+    "/createRating": {
+      "get": {
+        "operationId": "get-createrating",
+        "summary": "createRating",
+        "responses": {}
+      },
+      "post": {
+        "operationId": "post-createrating",
+        "summary": "createRating",
+        "responses": {}
+      }
+    }
+  },
+  "tags": []
+}
