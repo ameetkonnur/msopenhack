@@ -13,7 +13,7 @@ module.exports = async function (context, myBlob) {
             context.log(err);
         }
         else {
-            context.log ('Blobs in container with prefix ' + file_prefix + ' ' + data);
+            context.log ('Blobs in container with prefix ' + file_prefix + ' ' + data.entries);
         }    
     })
 };
