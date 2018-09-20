@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "99fb0d76697405d08cc6dd23c1e579599981f042"
+    "signature": "600285bac00c0d4ac81747d3dc17c3181105efb5"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,7 @@
       "extensions/1.0.0": {
         "dependencies": {
           "Microsoft.Azure.WebJobs.Extensions.CosmosDB": "3.0.1-rc1",
+          "Microsoft.Azure.WebJobs.Extensions.Storage": "3.0.0-rc1",
           "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator": "1.0.1",
           "NETStandard.Library": "2.0.3"
         },
@@ -96,6 +97,18 @@
           "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.CosmosDB.dll": {
             "assemblyVersion": "3.0.1.0",
             "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "Microsoft.Azure.WebJobs.Extensions.Storage/3.0.0-rc1": {
+        "dependencies": {
+          "Microsoft.Azure.WebJobs": "3.0.0-rc1",
+          "WindowsAzure.Storage": "9.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.Storage.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -1564,6 +1577,18 @@
             "fileVersion": "1.0.24212.1"
           }
         }
+      },
+      "WindowsAzure.Storage/9.3.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "assemblyVersion": "9.3.1.0",
+            "fileVersion": "9.3.1.0"
+          }
+        }
       }
     }
   },
@@ -1607,6 +1632,13 @@
       "sha512": "sha512-H4+suLzfFEfGv1fDW/r1MM1lqtkAeFtOMcSXUvnTROWIgx2YXRxqVeCWiY+oLMgIDRuo6GuqJ1p7EwqO23mP9w==",
       "path": "microsoft.azure.webjobs.extensions.cosmosdb/3.0.1-rc1",
       "hashPath": "microsoft.azure.webjobs.extensions.cosmosdb.3.0.1-rc1.nupkg.sha512"
+    },
+    "Microsoft.Azure.WebJobs.Extensions.Storage/3.0.0-rc1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZZ2rEwILEhQkluCRnUs6gR9kpq0lb5buIHIuqhM0wFOLd8ucsg77ZXzwsixokkZA4lxR/wR7W/v9XnddJMppGQ==",
+      "path": "microsoft.azure.webjobs.extensions.storage/3.0.0-rc1",
+      "hashPath": "microsoft.azure.webjobs.extensions.storage.3.0.0-rc1.nupkg.sha512"
     },
     "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/1.0.1": {
       "type": "package",
@@ -2391,6 +2423,13 @@
       "sha512": "sha512-FrazwwqfIXTfq23mfv4zH+BjqkSFNaNFBtjzu3I9NRmG8EELYyrv/fJnttCIwRMFRR/YKXF1hmsMmMEnl55HGw==",
       "path": "system.xml.xmlserializer/4.0.11",
       "hashPath": "system.xml.xmlserializer.4.0.11.nupkg.sha512"
+    },
+    "WindowsAzure.Storage/9.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s3BpEZRQD9lNKlraWEfbzRLhRUgEl3TMHXsTiHJACwqGJaYEv4kHfm8luxmqJUMZ18hqi3x4XgpwNZ+6E1vBFQ==",
+      "path": "windowsazure.storage/9.3.1",
+      "hashPath": "windowsazure.storage.9.3.1.nupkg.sha512"
     }
   }
 }

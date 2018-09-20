@@ -99,6 +99,19 @@
           "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.CosmosDB.dll": {}
         }
       },
+      "Microsoft.Azure.WebJobs.Extensions.Storage/3.0.0-rc1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.WebJobs": "3.0.0-rc1",
+          "WindowsAzure.Storage": "9.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.Storage.dll": {}
+        }
+      },
       "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -2044,6 +2057,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "WindowsAzure.Storage/9.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        }
       }
     }
   },
@@ -2106,6 +2132,17 @@
         "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.CosmosDB.dll",
         "microsoft.azure.webjobs.extensions.cosmosdb.3.0.1-rc1.nupkg.sha512",
         "microsoft.azure.webjobs.extensions.cosmosdb.nuspec"
+      ]
+    },
+    "Microsoft.Azure.WebJobs.Extensions.Storage/3.0.0-rc1": {
+      "sha512": "ZZ2rEwILEhQkluCRnUs6gR9kpq0lb5buIHIuqhM0wFOLd8ucsg77ZXzwsixokkZA4lxR/wR7W/v9XnddJMppGQ==",
+      "type": "package",
+      "path": "microsoft.azure.webjobs.extensions.storage/3.0.0-rc1",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Azure.WebJobs.Extensions.Storage.dll",
+        "microsoft.azure.webjobs.extensions.storage.3.0.0-rc1.nupkg.sha512",
+        "microsoft.azure.webjobs.extensions.storage.nuspec"
       ]
     },
     "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator/1.0.1": {
@@ -6715,11 +6752,35 @@
         "system.xml.xmlserializer.4.0.11.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "WindowsAzure.Storage/9.3.1": {
+      "sha512": "s3BpEZRQD9lNKlraWEfbzRLhRUgEl3TMHXsTiHJACwqGJaYEv4kHfm8luxmqJUMZ18hqi3x4XgpwNZ+6E1vBFQ==",
+      "type": "package",
+      "path": "windowsazure.storage/9.3.1",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.WindowsAzure.Storage.dll",
+        "lib/net45/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/net45/Microsoft.WindowsAzure.Storage.xml",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/win8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/win8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
+        "windowsazure.storage.9.3.1.nupkg.sha512",
+        "windowsazure.storage.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.Azure.WebJobs.Extensions.CosmosDB >= 3.0.1-rc1",
+      "Microsoft.Azure.WebJobs.Extensions.Storage >= 3.0.0-rc1",
       "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator >= 1.0.1",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -6731,11 +6792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\code\\Openhack\\extensions.csproj",
+      "projectUniqueName": "c:\\Openhack\\extensions.csproj",
       "projectName": "extensions",
-      "projectPath": "C:\\code\\Openhack\\extensions.csproj",
+      "projectPath": "c:\\Openhack\\extensions.csproj",
       "packagesPath": "C:\\Users\\ameetk\\.nuget\\packages\\",
-      "outputPath": "C:\\code\\Openhack\\obj\\",
+      "outputPath": "c:\\Openhack\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6761,6 +6822,10 @@
           "Microsoft.Azure.WebJobs.Extensions.CosmosDB": {
             "target": "Package",
             "version": "[3.0.1-rc1, )"
+          },
+          "Microsoft.Azure.WebJobs.Extensions.Storage": {
+            "target": "Package",
+            "version": "[3.0.0-rc1, )"
           },
           "Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator": {
             "target": "Package",
