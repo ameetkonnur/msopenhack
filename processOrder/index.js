@@ -14,7 +14,7 @@ module.exports = async function (context, myBlob) {
             context.log(err);
         }
         else {
-            var no_of_files = data.entries.length;
+            no_of_files = data.entries.length;
             context.log ('Blobs in container with prefix ' + file_prefix + ' ' + no_of_files);
         }    
     })
