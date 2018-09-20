@@ -5,7 +5,7 @@
       "name": "myBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "challeng6blob",
+      "path": "challeng6blob/{name}",
       "connection": "msopenhackchallenge6_STORAGE"
     }
   ]
