@@ -11,12 +11,11 @@ module.exports = async function (context, myBlob) {
         return new Promise((resolve,reject)=>{
             blobService.listBlobsSegmentedWithPrefix('challenge6blob',file_prefix,null,(err,data)=>{
                 if (err) {
-                    reject(err);
+                    context.log(err);
                 }
                 else {
                     context.log ('Blobs in container with prefix ' + file_prefix + ' ' + data);
                 }    
-
             })
         })
     }
